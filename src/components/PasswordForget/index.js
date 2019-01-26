@@ -1,7 +1,7 @@
 import React from 'react';
 import { withFirebase } from '../Firebase';
 import { Grid, Form, Header } from 'semantic-ui-react';
-import ErrorDisplay from '../../common_use_components/ErrorDisplay.js';
+import ErrorDisplay from '../../common_use_components/ErrorDisplay';
 
 const PassWordForgetPage = () => (
     <div>

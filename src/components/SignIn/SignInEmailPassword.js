@@ -6,6 +6,7 @@ import { withFirebase } from '../Firebase';
 import { Form } from 'semantic-ui-react';
 
 import { HOME } from '../../constants/routes';
+import ErrorDisplay from '../../common_use_components/ErrorDisplay';
 
 const INITIAL_STATE = {
     email: '',
@@ -66,7 +67,7 @@ class SignInFormClass extends React.Component {
                 />
                 <Form.Button fluid color="teal" disabled={isInvalid}>Login</Form.Button>
 
-                {error && <p style={{color: 'teal'}}>{error.message}</p>}
+                {error && <ErrorDisplay error={error}/>}
             </Form>
         )
     }

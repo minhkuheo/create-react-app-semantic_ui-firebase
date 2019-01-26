@@ -47,13 +47,7 @@ const LandingPage = () => (
                     <h4>Note:</h4>
                     <ul>
                         <li>
-                            <p>This boilerplate has been made from a tutorial of Robin Rwieruch with my own tweaks</p>
-                            <p>This tutorial helps me to:</p>
-                            <ul>
-                                <li><p>Get update with the newest React tech such as HOC and contextAPI</p></li>
-                                <li><p>Learn more about the design structure</p></li>
-                                <li><p>Think in a Reactive manner</p></li>
-                            </ul>
+                            <p>This boilerplate has been made with inspiration from Robin Rwieruch with my own tweaks</p>
                         </li>
                     </ul>
                 </li>

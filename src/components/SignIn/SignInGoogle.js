@@ -4,6 +4,7 @@ import { withRouter } from 'react-router-dom';
 import { compose } from 'recompose';
 import { HOME } from '../../constants/routes';
 import { Button, Icon } from 'semantic-ui-react';
+import ErrorDisplay from '../../common_use_components/ErrorDisplay';
 
 const ERROR_CODE_ACCOUNT_EXISTS =
   'auth/account-exists-with-different-credential';
@@ -60,7 +61,7 @@ class SignInFacebook extends React.Component {
                 <Button color='google plus' type="submit">
                     <Icon name='google' /> Google sign in
                 </Button>
-                { error && <p>{error.message}</p>}
+                { error && <ErrorDisplay error={error}/>}
             </form>
         );
     }

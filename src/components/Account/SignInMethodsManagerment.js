@@ -1,7 +1,7 @@
 import React from 'react';
 import { withFirebase } from '../Firebase';
 import { Button, Icon, Grid, Form, Header } from 'semantic-ui-react';
-import ErrorDisplay from '../../common_use_components/ErrorDisplay.js';
+import ErrorDisplay from '../../common_use_components/ErrorDisplay';
 
 const SIGN_IN_METHODS = [
     {

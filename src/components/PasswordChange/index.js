@@ -1,6 +1,7 @@
 import React from 'react';
 import { withFirebase } from '../Firebase';
 import { Form } from 'semantic-ui-react';
+import ErrorDisplay from '../../common_use_components/ErrorDisplay';
 
 const INITIAL_STATE = {
     passwordOne: '',
@@ -65,8 +66,8 @@ class PasswordChangeForm extends React.Component {
                 <Form.Button fluid disabled={isInvalid} color="teal">
                     Change my password
                 </Form.Button>
-
-                {error && <p>{error.message}</p>}
+                
+                {error && <ErrorDisplay error={error}/>}
             </Form>
         )
     }
