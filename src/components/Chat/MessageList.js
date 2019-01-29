@@ -1,5 +1,6 @@
 import React from 'react';
 import { Comment } from 'semantic-ui-react';
+import Moment from 'react-moment';
 
 const myColor = {
     author: { color: 'white' },
@@ -38,7 +39,7 @@ const MessageItem = ({ message }) => (
         <Comment.Content>
             <Comment.Author as='a' style={myColor.author}>{message.username}</Comment.Author>
             <Comment.Metadata>
-                <p style={myColor.createAt}>{message.createAt}</p>
+                <p style={myColor.createAt}><Moment fromNow>{message.createAt}</Moment></p>
                 {/* <div>Today at 5:42PM</div> */}
             </Comment.Metadata>
             <Comment.Text style={myColor.text}>{message.text}</Comment.Text>
